@@ -5,3 +5,20 @@ body {
 main {
     padding: 200px;
 }
+
+.bg-color {
+    background-color: #27355c;
+}
+
+.bg-image {
+    background-image: url('../img/brainbg.jpg');
+}
+
+.card-title, .card-text {
+    color: black;
+}
+
+.btn-color {
+    background-color: #fb500f;
+    color: white;
+}
