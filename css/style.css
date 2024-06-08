@@ -53,3 +53,14 @@ main {
 .width-600 {
     width: 600px;
 }
+
+.first-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headline {
+    text-align: center;
+}
