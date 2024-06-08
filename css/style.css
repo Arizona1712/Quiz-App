@@ -5,6 +5,7 @@ body {
 main {
     padding: 100px;
     display: flex;
+    justify-content: center;
 }
 
 .bg-color {
@@ -24,6 +25,10 @@ main {
     color: white;
 }
 
+.btn-color:hover {
+    background-color: #d34107;
+}
+
 .list-group-item {
     background-color: #27355c;
     border-color: #27355c;
@@ -40,6 +45,7 @@ main {
     justify-content: center;
     width: 100%;
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 .image-logo {
@@ -63,4 +69,54 @@ main {
 
 .headline {
     text-align: center;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.btn-answer {
+    border-color: #d6d6d6;
+    margin: 8px;
+    background-color: #d6d6d6;
+}
+
+.card-title {
+    text-align: center;
+    padding: inherit;
+}
+
+.bg-color-card {
+    background-color: #f7f7f7;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.d-flex-e {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.d-flex-c-pad-30 {
+    display: flex;
+    justify-content: center;
+}
+
+.d-flex-c-c {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: inherit;
+}
+
+.trophy {
+    position: absolute;
+    width: 140px;
+    right: -100px;
+    bottom: 50px;
 }
