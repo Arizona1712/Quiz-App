@@ -92,14 +92,15 @@ main {
     background-color: #f7f7f7;
 }
 
-.card:hover {
+.card-answer:hover {
     cursor: pointer;
     background-color: #f7f7f7;
 }
 
 .d-flex-e {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .d-flex-c-pad-30 {
