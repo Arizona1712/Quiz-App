@@ -3,7 +3,8 @@ body {
 }
 
 main {
-    padding: 200px;
+    padding: 100px;
+    display: flex;
 }
 
 .bg-color {
@@ -21,4 +22,34 @@ main {
 .btn-color {
     background-color: #fb500f;
     color: white;
+}
+
+.list-group-item {
+    background-color: #27355c;
+    border-color: #27355c;
+}
+
+.list-group-item.active {
+    border-left: 4px solid white !important;
+    background-color: #27355c;
+    border-color: #27355c;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.image-logo {
+    width: 100px;
+}
+
+.width-200 {
+    width: 200px;
+}
+
+.width-600 {
+    width: 600px;
 }
