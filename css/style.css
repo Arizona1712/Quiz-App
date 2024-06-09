@@ -121,3 +121,11 @@ main {
     right: -100px;
     bottom: 50px;
 }
+
+.bg-danger-light {
+    background-color: rgb(255, 0, 0, 0.5) !important;
+}
+
+.bg-success-light {
+    background-color: rgb(0, 128, 0, 0.5) !important;
+}

@@ -31,7 +31,7 @@
                 </div>            
             </div>
         </div>
-        <div class="card text-bg-dark width-600" id="pageStart">
+        <div class="card text-bg-dark width-600" id="pageStartScreen">
             <img src="./img/brainbg.jpg" class="card-img" alt="...">
             <div class="card-img-overlay first-page">
                 <div class="headline">
@@ -69,12 +69,12 @@
                     </div>
                 </div>
                 <div class="d-flex-e">               
-                    <p><b id="currentQuestion">1</b> von <b id="allQuestions">20</b> Fragen</p>
-                    <a href="#" class="btn btn-color" onclick="nextQuestion()">NEXT</a>
+                    <p><b id="questionNumber">1</b> von <b id="allQuestions">20</b> Fragen</p>
+                    <button class="btn btn-color" id="nextButton" onclick="nextQuestion()" disabled>NEXT</button>
                 </div> 
             </div>
         </div>
-        <div class="card width-600 d-flex-c-c" id="pageEnd" style="display: none;">
+        <div class="card width-600 d-flex-c-c" id="pageEndScreen" style="display: none;">
             <div class="d-flex-c-pad-30">
                 <img src="./img/brain result.png" class="card-img-top image-logo" alt="...">
             </div>
@@ -82,8 +82,8 @@
                 <h3 class="card-title">Complete First General Quiz</h3>
                 <p class="card-text"><b>YOU SCORE 10/10</b></p>
                 <div>
-                    <a href="#" class="btn btn-color">SHARE</a>
-                    <a href="#" class="btn btn-color" disabled>REPLAY</a>
+                    <button class="btn btn-color">SHARE</button>
+                    <button class="btn btn-color" onclick="restartGame()">REPLAY</button>
                 </div>
             </div>
             <img src="./img/tropy.png" class="card-img-top trophy" alt="...">
