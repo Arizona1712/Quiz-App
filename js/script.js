@@ -17,16 +17,21 @@ function startQuiz() {
 
 
 function showCurrentQuestion() {
-    if (currentQuestion >= questions.length) {
+    if (gameIsOver()) {
         showEndScreen();
     } else {
+        showProgressBar();
         showQuestion();
     }
 }
 
 
+function gameIsOver() {
+    return currentQuestion >= questions.length;
+}
+
+
 function showQuestion() {
-    showProgress();
     let question = questions[currentQuestion];
     document.getElementById('questionNumber').innerHTML = currentQuestion + 1;
     document.getElementById('question').innerHTML = question['question'];
@@ -37,7 +42,7 @@ function showQuestion() {
 }
 
 
-function showProgress() {
+function showProgressBar() {
     let percent = (currentQuestion + 1) / questions.length;
     percent = Math.round(percent * 100);
     document.getElementById('progressBar').innerHTML = `${percent}%`;
